@@ -9,20 +9,59 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1 {
+            font-family: fantasy;
+            font-size: 2em;
+            font-weight: normal;
+            color: rgb(71, 71, 71);
+            text-align: left;
+        }
         
         table {
             border-collapse: collapse;
+            box-shadow: 1.5px 1.5px rgb(165, 164, 164);
+            
         }
         
         caption {
-            font-size: 1.3em;
+            font-family: monospace;
+            font-size: 1.4em;
             font-weight: bold;
-           padding: 10px; 
+            padding: 10px; 
         }
         
         th, td {
-            border: 1px solid gray;
+            border: 2px solid rgb(85, 84, 84);
             padding: 10px;
+        
+        }
+
+        .cater {
+            background-color: rgb(161, 160, 161);
+            color: #fff;
+        }
+
+        .fe {
+            background-color: rgb(248, 173, 238);
+            
+        }
+        .fe1 {
+            background-color: rgb(250, 233, 247);
+        }
+        
+        .mas {
+            background-color: rgb(161, 248, 158);
+        }
+        .mas1 {
+            background-color: rgba(232, 252, 231, 0.801);
+        }
+
+        .cri {
+            background-color: rgb(253, 179, 110);
+        }
+
+        .cri1 {
+            background-color: rgb(243, 241, 206);
         }
     </style>
 </head>
@@ -30,16 +69,85 @@
     <h1>Tabelas</h1>
     <table>
         <caption>
-            Filmes favoritos
+            Filmes e Esportes favoritos
         </caption>
         <thead>
-            <tr>
+            <tr class="cater"> <!--1ª Linha-->
                 <th>Grupos</th>
                 <th>Nomes</th>
-                <th>Filmes</th>
+                <th colspan="3">Filmes</th>
+                <th colspan="2">Esportes</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <tr class="fe1"> <!--2ª Linha-->
+                <th rowspan="3"class="fe">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                <td>Handebol</td>
+                <td>Voleybol</td>
+            </tr>
+            <tr class="fe1"> <!--3ª Linha-->
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batmam</td>
+                <td>Basketbol</td>
+                <td>Natação</td>
+            </tr>
+            <tr class="fe1"> <!--4ª Linha-->
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matix</td>
+                <td>Big Hero</td>
+                <td>Futebol</td>
+                <td>Voleybol</td>
+            </tr>
+            <tr class="mas1"> <!--5ª Linha-->
+                <th rowspan="3" class="mas">Homens</th>
+                <td>Bruno Mendoça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+                <td>Basketbol</td>
+                <td>Judô</td>
+            </tr>
+            <tr class="mas1"> <!--6ª Linha-->
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+                <td>futebol</td>
+                <td>Fórmula 1</td>
+            </tr>
+            <tr class="mas1"> <!--7ª Linha-->
+                <td>Fabiano Mota</td>
+                <td>Star Wars S</td>
+                <td>Taxi Driver</td>
+                <td>Toy Stroy</td>
+            </tr>
+            <tr class="cri1">
+                <th rowspan="3" class="cri">Crianças</th>
+                <td>Manuela</td>
+                <td> Héroi</td>
+                <td>O guardião</td>
+                <td>Power Ranger</td>
+            </tr>
+            <tr class="cri1">
+                <td>Pedro</td>
+                <td>Dinossauros</td>
+                <td>Patrulha Canina</td>
+                <td>O Máscara</td>
+            </tr>
+            <tr class="cri1">
+                <td>Eloá</td>
+                <td>Os bambas</td>
+                <td>Malvado favorito</td>
+                <td>Tigres</td>
+            </tr>
+        </tbody>
     </table>
     
 </body>
