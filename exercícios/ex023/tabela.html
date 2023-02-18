@@ -73,15 +73,21 @@
         </caption>
         <thead>
             <tr class="cater"> <!--1ª Linha-->
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
-                <th colspan="2">Esportes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+                <th colspan="2" scope="colgroup">Esportes</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th colspan="6" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr class="fe1"> <!--2ª Linha-->
-                <th rowspan="3"class="fe">Mulheres</th>
+                <th rowspan="3"class="fe" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -106,7 +112,7 @@
                 <td>Voleybol</td>
             </tr>
             <tr class="mas1"> <!--5ª Linha-->
-                <th rowspan="3" class="mas">Homens</th>
+                <th rowspan="3" class="mas" scope="rowgroup">Homens</th>
                 <td>Bruno Mendoça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -120,13 +126,15 @@
                 <td>Oldboy</td>
                 <td>Dangal</td>
                 <td>futebol</td>
-                <td>Fórmula 1</td>
+                <td>F1</td>
             </tr>
             <tr class="mas1"> <!--7ª Linha-->
                 <td>Fabiano Mota</td>
                 <td>Star Wars S</td>
                 <td>Taxi Driver</td>
                 <td>Toy Stroy</td>
+                <td>Fubebol</td>
+                <td>Voley</td>
             </tr>
             <tr class="cri1">
                 <th rowspan="3" class="cri">Crianças</th>
@@ -134,18 +142,24 @@
                 <td> Héroi</td>
                 <td>O guardião</td>
                 <td>Power Ranger</td>
+                <td>Futebol</td>
+                <td>Voley</td>
             </tr>
             <tr class="cri1">
                 <td>Pedro</td>
                 <td>Dinossauros</td>
                 <td>Patrulha Canina</td>
                 <td>O Máscara</td>
+                <td>Macaca</td>
+                <td>Handebol</td>
             </tr>
             <tr class="cri1">
                 <td>Eloá</td>
                 <td>Os bambas</td>
                 <td>Malvado favorito</td>
                 <td>Tigres</td>
+                <td>Voley</td>
+                <td>Basketbol</td>
             </tr>
         </tbody>
     </table>
